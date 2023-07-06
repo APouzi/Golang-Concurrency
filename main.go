@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	ch1 := make(chan int)
@@ -9,6 +11,8 @@ func main() {
 	go addPartTwo(1, 2, ch2)
 	fmt.Println(<-ch1 + <-ch2)
 
+	// Examples being called
+	CallThese()
 }
 
 func addPartOne(a, b int, c chan int) {
