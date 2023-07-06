@@ -8,10 +8,10 @@ import (
 func WaitGroupStarter() {
 	var wg sync.WaitGroup
 	added := 0
+	wg.Add(1)
 	go AddingPartOne(1, 1, &added, &wg)
 	wg.Add(1)
 	go AddingPartTwo(1, 1, &added, &wg)
-	wg.Add(1)
 	wg.Wait()
 	fmt.Println("waitgroup.go result is:",added)
 }
