@@ -13,6 +13,7 @@ func main() {
 
 	// Examples being called
 	CallThese()
+	WaitGroupStarter()
 }
 
 func addPartOne(a, b int, c chan int) {
