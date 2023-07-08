@@ -14,6 +14,8 @@ func main() {
 	// Examples being called
 	CallThese()
 	WaitGroupStarter()
+	Channelinit()
+	CloseChannel()
 }
 
 func addPartOne(a, b int, c chan int) {
