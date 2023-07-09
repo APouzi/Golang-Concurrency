@@ -16,6 +16,7 @@ func main() {
 	WaitGroupStarter()
 	Channelinit()
 	CloseChannel()
+	SelectInit()
 }
 
 func addPartOne(a, b int, c chan int) {
