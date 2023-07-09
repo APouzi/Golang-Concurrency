@@ -20,7 +20,7 @@ func StartSelectWithoutClose() {
 	go NumtoChannel(ch3)
 	go NumtoChannel(ch4)
 	
-	fmt.Println("\n Select with numbered loop and no close\n")
+	fmt.Println("\n Select with numbered loop and no close:")
 	SelectReader(chansSlice)
 }
 
@@ -43,7 +43,7 @@ func StartSelectWithClose() {
 	go NumtoChannelWithClose(ch3)
 	go NumtoChannelWithClose(ch4)
 	
-	fmt.Println("\n Select with inifite loop and close, making it dynamic\n")
+	fmt.Println("\n Select with inifite loop and close, making it dynamic:")
 	SelectReaderV2(chansSlice)
 	
 }
