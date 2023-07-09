@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func SelectInit(){
-	fmt.Println("\n Select Start \n")
+	fmt.Println("\n Select and Case Start:")
 	StartSelectWithoutClose()
 	StartSelectWithClose()
 }
